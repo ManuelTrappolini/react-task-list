@@ -1,5 +1,5 @@
 export default function AppHeader() {
-    const title = 'React Task List';
+    const title = 'Task Manager';
 
     return (
         <header>

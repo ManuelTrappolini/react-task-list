@@ -8,7 +8,7 @@ import AppFooter from './components/AppFooter'
 
 
 
-console.log(tasks);
+
 
 function App() {
 
@@ -18,7 +18,7 @@ function App() {
     <div>
       <AppHeader></AppHeader>
       <AppMain></AppMain>
-      <AppFooter></AppFooter>
+      {/* <AppFooter></AppFooter> */}
     </div>
   )
 }

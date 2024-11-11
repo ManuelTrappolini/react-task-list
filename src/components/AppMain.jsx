@@ -86,14 +86,14 @@ export default function AppMain() {
             <section className="completed">
                 <h2>Current Task (4)</h2>
                 <ul>
-                    {currentTasks.map((task, index) => <li key={index}><h3>{task.title}<button className="badge">{task.state}</button></h3><div>Priority:{task.priority}</div><div className="estimatedTime">Est.Time{task.estimatedTime}</div></li>)}
+                    {currentTasks.map((task, index) => <li key={index}><h3>{task.title}<button className="badge">{task.state}</button></h3><div>Priority:{task.priority}</div><div className="estimatedTime">Est.Time {task.estimatedTime}</div></li>)}
                 </ul>
 
                 <br />
 
                 <h2>Completed Task (6)</h2>
                 <ul>
-                    {completedTasks.map((task, index) => <li key={index}><h3>{task.title}<button className="badge">{task.state}</button></h3><div>Priority:{task.priority}</div><div className="estimatedTime">Est.Time{task.estimatedTime}</div></li>)}
+                    {completedTasks.map((task, index) => <li key={index}><h3>{task.title}<button className="badge">{task.state}</button></h3><div>Priority:{task.priority}</div><div className="estimatedTime">Est.Time {task.estimatedTime}</div></li>)}
                 </ul>
 
             </section>

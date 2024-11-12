@@ -84,17 +84,33 @@ export default function AppMain() {
         <main>
 
             <section className="completed">
-                <h2>Current Task (4)</h2>
-                <ul>
-                    {currentTasks.map((task, index) => <li key={index}><h3>{task.title}<button className="badge">{task.state}</button></h3><div>Priority:{task.priority}</div><div className="estimatedTime">Est.Time {task.estimatedTime}</div></li>)}
-                </ul>
+                <h2>Current Task ({currentTasks.length})</h2>
+
+                {currentTasks.map((task, index) =>
+                    <ul>
+                        <li key={index}>
+                            <h3>{task.title}<button className="badge">{task.state}</button></h3>
+                            <div>Priority:{task.priority}</div>
+                            <div className="estimatedTime">Est.Time {task.estimatedTime}</div>
+                        </li>
+                    </ul>
+                )}
+
 
                 <br />
 
-                <h2>Completed Task (6)</h2>
-                <ul>
-                    {completedTasks.map((task, index) => <li key={index}><h3>{task.title}<button className="badge">{task.state}</button></h3><div>Priority:{task.priority}</div><div className="estimatedTime">Est.Time {task.estimatedTime}</div></li>)}
-                </ul>
+                <h2>Completed Task ({completedTasks.length})</h2>
+
+                {completedTasks.map((task, index) =>
+                    <ul>
+                        <li key={index}>
+                            <h3>{task.title}<button className="badge">{task.state}</button></h3>
+                            <div>Priority:{task.priority}</div>
+                            <div className="estimatedTime">Est.Time {task.estimatedTime}</div>
+                        </li>
+
+                    </ul>
+                )}
 
             </section>
 
